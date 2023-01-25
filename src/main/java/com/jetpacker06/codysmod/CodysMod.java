@@ -33,7 +33,7 @@ public class CodysMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
-
+        LOGGER.info("loaded codysmod");
         AllBlocks.register(modEventBus);
         AllItems.register(modEventBus);
 

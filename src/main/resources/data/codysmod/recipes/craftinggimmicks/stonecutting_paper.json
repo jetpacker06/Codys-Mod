@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:sugar_cane"
+    },
+    "result": "minecraft:paper",
+    "count": 1
+}

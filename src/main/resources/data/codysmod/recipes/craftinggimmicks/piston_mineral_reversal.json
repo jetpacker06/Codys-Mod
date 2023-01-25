@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "CRC",
+        "CiC"
+    ],
+    "key": {
+        "#": {
+            "tag": "minecraft:planks"
+        },
+        "C": {
+            "tag": "minecraft:stone_crafting_materials"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+      "item":"minecraft:piston"
+    }
+}

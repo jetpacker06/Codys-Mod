@@ -1,0 +1,132 @@
+plugins {
+    id 'net.minecraftforge.gradle' version '5.1.+'
+}
+
+
+group = 'com.jetpacker06.codysmod'
+version = '0.1'
+
+java {
+    archivesBaseName = 'codysmod'
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
+}
+
+minecraft {
+    mappings channel: 'official', version: '1.19.2'
+    runs {
+        client {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            property 'forge.enabledGameTestNamespaces', 'codysmod'
+            mods {
+                codysmod {
+                source sourceSets.main
+            }
+        }
+    }
+
+    server {
+        workingDirectory project.file('run')
+
+        property 'forge.logging.markers', 'REGISTRIES'
+
+        property 'forge.logging.console.level', 'debug'
+
+        property 'forge.enabledGameTestNamespaces', 'codysmod'
+
+        mods {
+            codysmod {
+            source sourceSets.main
+        }
+    }
+}
+
+gameTestServer {
+    workingDirectory project.file('run')
+
+    property 'forge.logging.markers', 'REGISTRIES'
+
+    property 'forge.logging.console.level', 'debug'
+
+    property 'forge.enabledGameTestNamespaces', 'codysmod'
+
+    mods {
+        codysmod {
+        source sourceSets.main
+    }
+}
+}
+
+data {
+    workingDirectory project.file('run')
+
+    property 'forge.logging.markers', 'REGISTRIES'
+
+    property 'forge.logging.console.level', 'debug'
+
+    args '--mod', 'createbb', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+
+    mods {
+        codysmod {
+        source sourceSets.main
+    }
+}
+}
+}
+}
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+repositories {
+    maven {
+    // location of the maven that hosts JEI files before January 2023
+    name = "Progwml6's maven"
+    url = "https://dvs1.progwml6.com/files/maven/"
+}
+    maven {
+        // location of the maven that hosts JEI files since January 2023
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/"
+    }
+    maven {
+        // location of a maven mirror for JEI files, as a fallback
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+    }
+}
+
+dependencies {
+    // Specify the version of Minecraft to use. If this is any group other than 'net.minecraft' it is assumed
+    // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
+    // The userdev artifact is a special name and will get all sorts of transformations applied to it.
+    minecraft 'net.minecraftforge:forge:1.19.2-43.2.0'
+
+    // compile against the JEI API but do not include it at runtime
+    compileOnly(fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}"))
+    compileOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}"))
+    // at runtime, use the full JEI jar for Forge
+    runtimeOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}"))
+}
+
+
+// Example for how to get properties into the manifest for reading at runtime.
+jar {
+    manifest {
+        attributes([
+                "Specification-Title"     : "cody'smod",
+                "Specification-Vendor"    : "jetpacker06",
+                "Specification-Version"   : "1", // We are version 1 of ourselves
+                "Implementation-Title"    : project.name,
+                "Implementation-Version"  : project.jar.archiveVersion,
+                "Implementation-Vendor"   : "jetpacker06",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
+
+jar.finalizedBy('reobfJar')
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}

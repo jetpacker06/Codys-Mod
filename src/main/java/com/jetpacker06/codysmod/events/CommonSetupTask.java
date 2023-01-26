@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 
 public class CommonSetupTask {
-    public static void run(final FMLCommonSetupEvent event) {
+    public static void onCommonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             ComposterBlock.COMPOSTABLES.put(Items.POISONOUS_POTATO, 0.65f);
         });

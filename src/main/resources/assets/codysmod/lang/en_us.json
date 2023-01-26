@@ -15,5 +15,8 @@
 
   "block.codysmod.gold_door": "Gold Door",
   "block.codysmod.copper_door": "Copper Door",
-  "block.codysmod.deepslate_door": "Deepslate Door"
+  "block.codysmod.deepslate_door": "Deepslate Door",
+
+  "item.codysmod.iron_tack_hammer": "Iron Tack Hammer",
+  "item.codysmod.diamond_tack_hammer": "Diamond Tack Hammer"
 }

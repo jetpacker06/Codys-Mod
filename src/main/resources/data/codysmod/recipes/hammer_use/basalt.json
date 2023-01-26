@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "codysmod:tack_hammers"
+    },
+    [
+      {
+        "item": "minecraft:polished_basalt"
+      },
+      {
+        "item": "minecraft:smooth_basalt"
+      }
+    ]
+  ],
+  "result": {
+    "item": "minecraft:basalt",
+    "count": 1
+  },
+  "group": "hammering"
+}

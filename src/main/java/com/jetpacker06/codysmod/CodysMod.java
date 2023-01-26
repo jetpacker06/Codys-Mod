@@ -18,7 +18,7 @@ public class CodysMod {
     public CodysMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        modEventBus.addListener(CommonSetupTask::run);
+        modEventBus.addListener(CommonSetupTask::onCommonSetup);
         AllBlocks.register(modEventBus);
         AllItems.register(modEventBus);
 

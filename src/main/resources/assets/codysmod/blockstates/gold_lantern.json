@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "codysmod:block/gold_lantern"
+    },
+    "hanging=true": {
+      "model": "codysmod:block/gold_lantern_hanging"
+    }
+  }
+}

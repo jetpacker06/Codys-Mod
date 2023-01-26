@@ -1,9 +1,9 @@
-package com.jetpacker06.codysmod.block;
+package com.jetpacker06.codysmod.register;
 
 import com.jetpacker06.codysmod.CodysMod;
-import com.jetpacker06.codysmod.item.AllItems;
+import com.jetpacker06.codysmod.block.CustomDoorBlock;
+import com.jetpacker06.codysmod.item.Tab;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -22,9 +22,16 @@ public class AllBlocks {
         CodysMod.LOGGER.info("registered " + name);
         return toReturn;
     }
+    public static void register(IEventBus eventBus) {
+        BLOCKS.register(eventBus);
+    }
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
         AllItems.ITEMS.register(
-                name, () -> new BlockItem(block.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+                name, () -> new BlockItem(block.get(), new Item.Properties().tab(Tab.CODYSMOD)));
+    }
+    private static RegistryObject<Block> registerDoorBlock(String doorType, boolean requiresRedstone,
+                                                           CustomDoorBlock.DoorMaterial doorMaterial, BlockBehaviour.Properties properties) {
+        return registerBlock(doorType + "_door", () -> new CustomDoorBlock(properties, requiresRedstone, doorMaterial));
     }
 
     public static final RegistryObject<Block> BLACK_NETHER_BRICKS = registerBlock("black_nether_bricks", () ->
@@ -41,7 +48,20 @@ public class AllBlocks {
             new FenceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_FENCE)));
 
 
-    public static void register(IEventBus eventBus) {
-        BLOCKS.register(eventBus);
-    }
+    public static final RegistryObject<Block> GOLD_LANTERN = registerBlock("gold_lantern", () ->
+            new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)));
+    public static final RegistryObject<Block> GOLD_SOUL_LANTERN = registerBlock("gold_soul_lantern", () ->
+            new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)));
+    public static final RegistryObject<Block> COPPER_LANTERN = registerBlock("copper_lantern", () ->
+            new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)));
+    public static final RegistryObject<Block> COPPER_SOUL_LANTERN = registerBlock("copper_soul_lantern", () ->
+            new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)));
+
+
+    public static final RegistryObject<Block> GOLD_DOOR = registerDoorBlock("gold", false,
+            CustomDoorBlock.DoorMaterial.METAL, BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).requiresCorrectToolForDrops());
+    public static final RegistryObject<Block> COPPER_DOOR = registerDoorBlock("copper", false,
+            CustomDoorBlock.DoorMaterial.METAL, BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).requiresCorrectToolForDrops());
+    public static final RegistryObject<Block> DEEPSLATE_DOOR = registerDoorBlock("deepslate", false,
+            CustomDoorBlock.DoorMaterial.STONE, BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).requiresCorrectToolForDrops());
 }

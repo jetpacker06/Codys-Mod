@@ -1,4 +1,4 @@
-package com.jetpacker06.codysmod.item;
+package com.jetpacker06.codysmod.register;
 
 import com.jetpacker06.codysmod.CodysMod;
 import net.minecraft.world.item.Item;

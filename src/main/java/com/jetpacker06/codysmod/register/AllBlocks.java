@@ -64,4 +64,10 @@ public class AllBlocks {
             CustomDoorBlock.DoorMaterial.METAL, BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).requiresCorrectToolForDrops());
     public static final RegistryObject<Block> DEEPSLATE_DOOR = registerDoorBlock("deepslate", false,
             CustomDoorBlock.DoorMaterial.STONE, BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).requiresCorrectToolForDrops());
+
+
+    public static final RegistryObject<Block> CRACKED_END_STONE_BRICKS = registerBlock("cracked_end_stone_bricks", () ->
+            new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE_BRICKS)));
+    public static final RegistryObject<Block> CRACKED_MUD_BRICKS = registerBlock("cracked_mud_bricks", () ->
+            new Block(BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS)));
 }

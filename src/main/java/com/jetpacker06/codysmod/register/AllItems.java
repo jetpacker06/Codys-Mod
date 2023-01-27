@@ -15,9 +15,15 @@ public class AllItems {
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
+    private static  RegistryObject<Item> simpleItem(String name) {
+        return ITEMS.register(name, () -> new Item(new Item.Properties().tab(Tab.CODYSMOD)));
+    }
 
     public static final RegistryObject<Item> IRON_TACK_HAMMER = ITEMS.register("iron_tack_hammer", () ->
             new TackHammerItem(new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).defaultDurability(256)));
     public static final RegistryObject<Item> DIAMOND_TACK_HAMMER = ITEMS.register("diamond_tack_hammer", () ->
             new TackHammerItem(new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).defaultDurability(1024)));
+
+    public static final RegistryObject<Item> COPPER_NUGGET = simpleItem("copper_nugget");
+    public static final RegistryObject<Item> NETHERITE_NUGGET = simpleItem("netherite_nugget");
 }

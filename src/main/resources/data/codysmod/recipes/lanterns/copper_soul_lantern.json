@@ -1,16 +1,21 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:copper_ingot"
-        },
-        {
-            "item": "minecraft:soul_torch"
-        }
-    ],
-    "result": {
-        "item": "codysmod:copper_soul_lantern",
-        "count": 1
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#T#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "codysmod:copper_nugget"
     },
-    "group": "lanterns"
+    "T": {
+      "item": "minecraft:soul_torch"
+    }
+  },
+  "result": {
+    "item": "codysmod:copper_soul_lantern",
+    "count": 1
+  },
+  "group": "lanterns"
 }

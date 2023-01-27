@@ -8,6 +8,9 @@
   "block.codysmod.cracked_black_nether_bricks": "Cracked Black Nether Bricks",
   "block.codysmod.chiseled_black_nether_bricks": "Chiseled Black Nether Bricks",
 
+  "block.codysmod.cracked_end_stone_bricks": "Cracked End Stone Bricks",
+  "block.codysmod.cracked_mud_bricks": "Cracked Mud Bricks",
+
   "block.codysmod.gold_lantern": "Gold Lantern",
   "block.codysmod.gold_soul_lantern": "Gold Soul Lantern",
   "block.codysmod.copper_lantern": "Copper Lantern",
@@ -18,5 +21,8 @@
   "block.codysmod.deepslate_door": "Deepslate Door",
 
   "item.codysmod.iron_tack_hammer": "Iron Tack Hammer",
-  "item.codysmod.diamond_tack_hammer": "Diamond Tack Hammer"
+  "item.codysmod.diamond_tack_hammer": "Diamond Tack Hammer",
+
+  "item.codysmod.copper_nugget": "Copper Nugget",
+  "item.codysmod.netherite_nugget": "Netherite Nugget"
 }

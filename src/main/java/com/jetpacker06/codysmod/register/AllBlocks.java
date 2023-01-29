@@ -70,4 +70,6 @@ public class AllBlocks {
             new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE_BRICKS)));
     public static final RegistryObject<Block> CRACKED_MUD_BRICKS = registerBlock("cracked_mud_bricks", () ->
             new Block(BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS)));
+    public static final RegistryObject<Block> CRACKED_PURPUR = registerBlock("cracked_purpur", () ->
+            new Block(BlockBehaviour.Properties.copy(Blocks.PURPUR_BLOCK)));
 }

@@ -1,6 +1,9 @@
 {
   "itemGroup.CodysMod": "Cody's Mod",
 
+  "tooltip.codysmod.press_shift": "Press SHIFT for info.",
+  "tooltip.codysmod.warm_milk": "Cures bad effects. Won't be warm forever.",
+
   "block.codysmod.black_nether_bricks": "Black Nether Bricks",
   "block.codysmod.black_nether_brick_slab": "Black Nether Brick Slab",
   "block.codysmod.black_nether_brick_stairs": "Black Nether Brick Stairs",
@@ -10,6 +13,7 @@
 
   "block.codysmod.cracked_end_stone_bricks": "Cracked End Stone Bricks",
   "block.codysmod.cracked_mud_bricks": "Cracked Mud Bricks",
+  "block.codysmod.cracked_purpur": "Cracked Purpur",
 
   "block.codysmod.gold_lantern": "Gold Lantern",
   "block.codysmod.gold_soul_lantern": "Gold Soul Lantern",
@@ -24,6 +28,8 @@
   "item.codysmod.diamond_tack_hammer": "Diamond Tack Hammer",
 
   "item.codysmod.netherite_fishing_rod": "Netherite Fishing Rod",
+
+  "item.codysmod.warm_milk": "Warm Milk",
 
   "item.codysmod.copper_nugget": "Copper Nugget",
   "item.codysmod.netherite_nugget": "Netherite Nugget",

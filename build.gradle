@@ -118,6 +118,8 @@ dependencies {
 
     //NBT Viewer mod from cursemaven
     implementation fg.deobf("curse.maven:nbtviewer-514135:3865779")
+    //MouseTweaks mod from cursemaven
+  //  implementation fg.deobf("curse.maven:mousetweaks-60089:3871353")
 }
 
 

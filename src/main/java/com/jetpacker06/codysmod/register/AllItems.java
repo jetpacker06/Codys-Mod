@@ -3,9 +3,11 @@ package com.jetpacker06.codysmod.register;
 import com.jetpacker06.codysmod.CodysMod;
 import com.jetpacker06.codysmod.item.Tab;
 import com.jetpacker06.codysmod.item.TackHammerItem;
+import com.jetpacker06.codysmod.item.WarmMilkBucketItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.FishingRodItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -29,6 +31,8 @@ public class AllItems {
     public static final RegistryObject<Item> NETHERITE_FISHING_ROD = ITEMS.register("netherite_fishing_rod", () ->
             new FishingRodItem(new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).defaultDurability(2032)));
 
+    public static final RegistryObject<Item> WARM_MILK = ITEMS.register("warm_milk", () ->
+            new WarmMilkBucketItem(new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).craftRemainder(Items.BUCKET)));
 
     public static final RegistryObject<Item> COPPER_NUGGET = simpleItem("copper_nugget");
     public static final RegistryObject<Item> NETHERITE_NUGGET = simpleItem("netherite_nugget");

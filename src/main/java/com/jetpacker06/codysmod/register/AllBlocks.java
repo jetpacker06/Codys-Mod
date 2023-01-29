@@ -46,6 +46,10 @@ public class AllBlocks {
             new StairBlock(() -> BLACK_NETHER_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_STAIRS)));
     public static final RegistryObject<Block> BLACK_NETHER_BRICK_FENCE = registerBlock("black_nether_brick_fence", () ->
             new FenceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_FENCE)));
+    public static final RegistryObject<Block> BLACK_NETHER_BRICK_FENCE_GATE = registerBlock("black_nether_brick_fence_gate", () ->
+            new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_FENCE)));
+    public static final RegistryObject<Block> NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate", () ->
+            new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_FENCE)));
 
 
     public static final RegistryObject<Block> GOLD_LANTERN = registerBlock("gold_lantern", () ->

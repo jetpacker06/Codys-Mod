@@ -21,6 +21,8 @@ public class CommonSetupTasks {
         event.enqueueWork(() -> {
             ModPotionUtil.add3PotionRecipes(Potions.AWKWARD, AllPotions.HASTE.get(), AllPotions.LONG_HASTE.get(),
                     AllPotions.STRONG_HASTE.get(), Items.GLOW_BERRIES);
+            ModPotionUtil.add3PotionRecipes(Potions.AWKWARD, AllPotions.LUCK.get(), AllPotions.LONG_LUCK.get(),
+                    AllPotions.STRONG_LUCK.get(), Items.EXPERIENCE_BOTTLE);
             ModPotionUtil.addPotionAndLong(Potions.AWKWARD, AllPotions.GLOWING.get(), AllPotions.LONG_GLOWING.get(),
                     Items.GLOW_INK_SAC);
         });

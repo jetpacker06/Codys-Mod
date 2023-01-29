@@ -10,6 +10,9 @@
   "block.codysmod.black_nether_brick_fence": "Black Nether Brick Fence",
   "block.codysmod.cracked_black_nether_bricks": "Cracked Black Nether Bricks",
   "block.codysmod.chiseled_black_nether_bricks": "Chiseled Black Nether Bricks",
+  "block.codysmod.black_nether_brick_fence_gate": "Black Nether Brick Fence Gate",
+
+  "block.codysmod.nether_brick_fence_gate": "Nether Brick Fence Gate",
 
   "block.codysmod.cracked_end_stone_bricks": "Cracked End Stone Bricks",
   "block.codysmod.cracked_mud_bricks": "Cracked Mud Bricks",
@@ -46,6 +49,19 @@
   "item.minecraft.tipped_arrow.effect.haste": "Arrow of Haste",
   "item.minecraft.tipped_arrow.effect.long_haste": "Arrow of Haste",
   "item.minecraft.tipped_arrow.effect.strong_haste": "Arrow of Haste",
+
+  "item.minecraft.potion.effect.luck": "Potion of Luck",
+  "item.minecraft.splash_potion.effect.luck": "Splash Potion of Luck",
+  "item.minecraft.lingering_potion.effect.luck": "Lingering Potion of Luck",
+  "item.minecraft.potion.effect.long_luck": "Potion of Luck",
+  "item.minecraft.splash_potion.effect.long_luck": "Splash Potion of Luck",
+  "item.minecraft.lingering_potion.effect.long_luck": "Lingering Potion of Luck",
+  "item.minecraft.potion.effect.strong_luck": "Potion of Luck",
+  "item.minecraft.splash_potion.effect.strong_luck": "Splash Potion of Luck",
+  "item.minecraft.lingering_potion.effect.strong_luck": "Lingering Potion of Luck",
+  "item.minecraft.tipped_arrow.effect.luck": "Arrow of Luck",
+  "item.minecraft.tipped_arrow.effect.long_luck": "Arrow of Luck",
+  "item.minecraft.tipped_arrow.effect.strong_luck": "Arrow of Luck",
 
   "item.minecraft.potion.effect.glowing": "Potion of Glowing",
   "item.minecraft.splash_potion.effect.glowing": "Splash Potion of Glowing",

@@ -1,10 +1,11 @@
 plugins {
+    id 'maven-publish'
     id 'net.minecraftforge.gradle' version '5.1.+'
+    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
 }
 
 
-group = 'com.jetpacker06.codysmod'
-version = '0.1'
+version = "${mod_version}-${mc_version}"
 
 java {
     archivesBaseName = 'codysmod'
@@ -12,7 +13,7 @@ java {
 }
 
 minecraft {
-    mappings channel: 'official', version: '1.19.2'
+    mappings channel: 'parchment', version: "${parchment_version}"
     runs {
         client {
             workingDirectory project.file('run')

@@ -23,6 +23,30 @@
   "item.codysmod.iron_tack_hammer": "Iron Tack Hammer",
   "item.codysmod.diamond_tack_hammer": "Diamond Tack Hammer",
 
+  "item.codysmod.netherite_fishing_rod": "Netherite Fishing Rod",
+
   "item.codysmod.copper_nugget": "Copper Nugget",
-  "item.codysmod.netherite_nugget": "Netherite Nugget"
+  "item.codysmod.netherite_nugget": "Netherite Nugget",
+
+  "item.minecraft.potion.effect.haste": "Potion of Haste",
+  "item.minecraft.splash_potion.effect.haste": "Splash Potion of Haste",
+  "item.minecraft.lingering_potion.effect.haste": "Lingering Potion of Haste",
+  "item.minecraft.potion.effect.long_haste": "Potion of Haste",
+  "item.minecraft.splash_potion.effect.long_haste": "Splash Potion of Haste",
+  "item.minecraft.lingering_potion.effect.long_haste": "Lingering Potion of Haste",
+  "item.minecraft.potion.effect.strong_haste": "Potion of Haste",
+  "item.minecraft.splash_potion.effect.strong_haste": "Splash Potion of Haste",
+  "item.minecraft.lingering_potion.effect.strong_haste": "Lingering Potion of Haste",
+  "item.minecraft.tipped_arrow.effect.haste": "Arrow of Haste",
+  "item.minecraft.tipped_arrow.effect.long_haste": "Arrow of Haste",
+  "item.minecraft.tipped_arrow.effect.strong_haste": "Arrow of Haste",
+
+  "item.minecraft.potion.effect.glowing": "Potion of Glowing",
+  "item.minecraft.splash_potion.effect.glowing": "Splash Potion of Glowing",
+  "item.minecraft.lingering_potion.effect.glowing": "Lingering Potion of Glowing",
+  "item.minecraft.potion.effect.long_glowing": "Potion of Glowing",
+  "item.minecraft.splash_potion.effect.long_glowing": "Splash Potion of Glowing",
+  "item.minecraft.lingering_potion.effect.long_glowing": "Lingering Potion of Glowing",
+  "item.minecraft.tipped_arrow.effect.glowing": "Arrow of Glowing",
+  "item.minecraft.tipped_arrow.effect.long_glowing": "Arrow of Glowing"
 }

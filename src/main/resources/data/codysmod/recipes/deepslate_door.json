@@ -8,15 +8,15 @@
   "key": {
     "#": [
       {
-        "item": "minecraft:gold_ingot"
+        "item": "minecraft:deepslate"
       },
       {
-        "item": "minecraft:gold_ingot"
+        "item": "minecraft:deepslate"
       }
     ]
   },
   "result": {
-    "item": "codysmod:gold_door",
+    "item": "codysmod:deepslate_door",
     "count": 3
   }
 }

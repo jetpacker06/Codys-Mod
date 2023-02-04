@@ -15,7 +15,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.function.Supplier;
 
 public class AllBlocks {
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CodysMod.MODID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CodysMod.MOD_ID);
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
@@ -63,7 +63,7 @@ public class AllBlocks {
 
 
     public static final RegistryObject<Block> GOLD_DOOR = registerDoorBlock("gold", false,
-            CustomDoorBlock.DoorMaterial.METAL, BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).requiresCorrectToolForDrops());
+            CustomDoorBlock.DoorMaterial.METAL, BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).requiresCorrectToolForDrops());
     public static final RegistryObject<Block> COPPER_DOOR = registerDoorBlock("copper", false,
             CustomDoorBlock.DoorMaterial.METAL, BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).requiresCorrectToolForDrops());
     public static final RegistryObject<Block> DEEPSLATE_DOOR = registerDoorBlock("deepslate", false,
@@ -76,4 +76,13 @@ public class AllBlocks {
             new Block(BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS)));
     public static final RegistryObject<Block> CRACKED_PURPUR = registerBlock("cracked_purpur", () ->
             new Block(BlockBehaviour.Properties.copy(Blocks.PURPUR_BLOCK)));
+
+    public static final RegistryObject<Block> ICE_BRICKS = registerBlock("ice_bricks", () ->
+            new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_ICE)));
+    public static final RegistryObject<Block> CRACKED_ICE_BRICKS = registerBlock("cracked_ice_bricks", () ->
+            new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_ICE)));
+    public static final RegistryObject<Block> ICE_BRICK_STAIRS = registerBlock("ice_brick_stairs", () ->
+            new StairBlock(() -> ICE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.PACKED_ICE)));
+    public static final RegistryObject<Block> ICE_BRICK_WALL = registerBlock("ice_brick_wall", () ->
+            new WallBlock(BlockBehaviour.Properties.copy(Blocks.PACKED_ICE)));
 }

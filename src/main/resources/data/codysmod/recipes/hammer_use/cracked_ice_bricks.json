@@ -5,12 +5,12 @@
       "tag": "codysmod:tack_hammers"
     },
     {
-      "tag": "minecraft:coal"
+      "item": "codysmod:ice_bricks"
     }
   ],
   "result": {
-    "item": "minecraft:black_dye",
-    "count": 2
+    "item": "codysmod:cracked_ice_bricks",
+    "count": 1
   },
-  "group": "hammering"
+  "group":"hammering"
 }

@@ -4,7 +4,6 @@ import com.jetpacker06.codysmod.CodysMod;
 import com.jetpacker06.codysmod.item.Tab;
 import com.jetpacker06.codysmod.item.TackHammerItem;
 import com.jetpacker06.codysmod.item.WarmMilkBucketItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.FishingRodItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -14,7 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class AllItems {
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, CodysMod.MODID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, CodysMod.MOD_ID);
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

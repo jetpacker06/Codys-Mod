@@ -12,6 +12,11 @@
   "block.codysmod.chiseled_black_nether_bricks": "Chiseled Black Nether Bricks",
   "block.codysmod.black_nether_brick_fence_gate": "Black Nether Brick Fence Gate",
 
+  "block.codysmod.ice_brick_stairs": "Ice Brick Stairs",
+  "block.codysmod.cracked_ice_bricks": "Cracked Ice Bricks",
+  "block.codysmod.ice_bricks": "Ice Bricks",
+  "block.codysmod.ice_brick_wall": "Ice Brick Wall",
+
   "block.codysmod.nether_brick_fence_gate": "Nether Brick Fence Gate",
 
   "block.codysmod.cracked_end_stone_bricks": "Cracked End Stone Bricks",
@@ -29,6 +34,7 @@
 
   "item.codysmod.iron_tack_hammer": "Iron Tack Hammer",
   "item.codysmod.diamond_tack_hammer": "Diamond Tack Hammer",
+  "info.codysmod.tack_hammer": "Used to break up stone blocks in the crafting menu.",
 
   "item.codysmod.netherite_fishing_rod": "Netherite Fishing Rod",
 
@@ -49,6 +55,7 @@
   "item.minecraft.tipped_arrow.effect.haste": "Arrow of Haste",
   "item.minecraft.tipped_arrow.effect.long_haste": "Arrow of Haste",
   "item.minecraft.tipped_arrow.effect.strong_haste": "Arrow of Haste",
+  "codysmod.haste_potion_recipe_information": "Brewed with Glow Berries.",
 
   "item.minecraft.potion.effect.luck": "Potion of Luck",
   "item.minecraft.splash_potion.effect.luck": "Splash Potion of Luck",
@@ -62,6 +69,7 @@
   "item.minecraft.tipped_arrow.effect.luck": "Arrow of Luck",
   "item.minecraft.tipped_arrow.effect.long_luck": "Arrow of Luck",
   "item.minecraft.tipped_arrow.effect.strong_luck": "Arrow of Luck",
+  "codysmod.luck_potion_recipe_information": "Brewed with a Bottle o' Enchanting.",
 
   "item.minecraft.potion.effect.glowing": "Potion of Glowing",
   "item.minecraft.splash_potion.effect.glowing": "Splash Potion of Glowing",
@@ -70,5 +78,6 @@
   "item.minecraft.splash_potion.effect.long_glowing": "Splash Potion of Glowing",
   "item.minecraft.lingering_potion.effect.long_glowing": "Lingering Potion of Glowing",
   "item.minecraft.tipped_arrow.effect.glowing": "Arrow of Glowing",
-  "item.minecraft.tipped_arrow.effect.long_glowing": "Arrow of Glowing"
+  "item.minecraft.tipped_arrow.effect.long_glowing": "Arrow of Glowing",
+  "codysmod.glowing_potion_recipe_information": "Brewed with Glow Inc Sacs."
 }

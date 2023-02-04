@@ -11,10 +11,10 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-@Mod(CodysMod.MODID)
+@Mod(CodysMod.MOD_ID)
 public class CodysMod {
 
-    public static final String MODID = "codysmod";
+    public static final String MOD_ID = "codysmod";
     public static final Logger LOGGER = LogUtils.getLogger();
     public CodysMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -25,6 +25,6 @@ public class CodysMod {
         AllPotions.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
-        LOGGER.info("Loaded " + MODID);
+        LOGGER.info("Loaded " + MOD_ID);
     }
 }

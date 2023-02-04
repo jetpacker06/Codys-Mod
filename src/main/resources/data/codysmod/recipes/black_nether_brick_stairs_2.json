@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "codysmod:black_nether_bricks"
+    }
+  },
+  "result": {
+    "item": "codysmod:black_nether_brick_stairs",
+    "count": 4
+  }
+}

@@ -29,6 +29,13 @@ public class AllPotions {
     public static final RegistryObject<Potion> STRONG_LUCK = POTIONS.register("strong_luck", () ->
             new Potion(new MobEffectInstance(MobEffects.LUCK, 1800, 1)));
 
+    public static final RegistryObject<Potion> NAUSEA = POTIONS.register("nausea", () ->
+            new Potion(new MobEffectInstance(MobEffects.CONFUSION, 3600, 0)));
+    public static final RegistryObject<Potion> LONG_NAUSEA = POTIONS.register("long_nausea", () ->
+            new Potion(new MobEffectInstance(MobEffects.CONFUSION, 9600, 0)));
+    public static final RegistryObject<Potion> STRONG_NAUSEA = POTIONS.register("strong_nausea", () ->
+            new Potion(new MobEffectInstance(MobEffects.CONFUSION, 1800, 1)));
+
     public static final RegistryObject<Potion> GLOWING = POTIONS.register("glowing", () ->
             new Potion(new MobEffectInstance(MobEffects.GLOWING, 3600, 0)));
     public static final RegistryObject<Potion> LONG_GLOWING = POTIONS.register("long_glowing", () ->

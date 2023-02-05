@@ -19,7 +19,7 @@ import org.jetbrains.annotations.NotNull;
 public class CodysModJEIPlugin implements IModPlugin {
     public static final ResourceLocation UID = new ResourceLocation(CodysMod.MOD_ID, "jei_plugin");
     @Override
-    public ResourceLocation getPluginUid() {
+    public @NotNull ResourceLocation getPluginUid() {
         return UID;
     }
 
@@ -31,12 +31,18 @@ public class CodysModJEIPlugin implements IModPlugin {
     public void registerRecipes(@NotNull IRecipeRegistration reg) {
         addPotionInformation(reg, AllPotions.GLOWING.get(), "codysmod.glowing_potion_information");
         addPotionInformation(reg, AllPotions.LONG_GLOWING.get(), "codysmod.glowing_potion_information");
+
         addPotionInformation(reg, AllPotions.LUCK.get(), "codysmod.luck_potion_recipe_information");
         addPotionInformation(reg, AllPotions.STRONG_LUCK.get(), "codysmod.luck_potion_recipe_information");
         addPotionInformation(reg, AllPotions.LONG_LUCK.get(), "codysmod.luck_potion_recipe_information");
+
         addPotionInformation(reg, AllPotions.HASTE.get(), "codysmod.haste_potion_recipe_information");
         addPotionInformation(reg, AllPotions.STRONG_HASTE.get(), "codysmod.haste_potion_recipe_information");
         addPotionInformation(reg, AllPotions.LONG_HASTE.get(), "codysmod.haste_potion_recipe_information");
+
+        addPotionInformation(reg, AllPotions.NAUSEA.get(), "codysmod.nausea_potion_recipe_information");
+        addPotionInformation(reg, AllPotions.STRONG_NAUSEA.get(), "codysmod.nausea_potion_recipe_information");
+        addPotionInformation(reg, AllPotions.LONG_NAUSEA.get(), "codysmod.nausea_potion_recipe_information");
 
         reg.addItemStackInfo(new ItemStack(AllItems.IRON_TACK_HAMMER.get()), Component.translatable("info.codysmod.tack_hammer"));
         reg.addItemStackInfo(new ItemStack(AllItems.DIAMOND_TACK_HAMMER.get()), Component.translatable("info.codysmod.tack_hammer"));

@@ -23,6 +23,8 @@ public class CommonSetupTasks {
                     AllPotions.STRONG_HASTE.get(), Items.GLOW_BERRIES);
             ModPotionUtil.add3PotionRecipes(Potions.AWKWARD, AllPotions.LUCK.get(), AllPotions.LONG_LUCK.get(),
                     AllPotions.STRONG_LUCK.get(), Items.EXPERIENCE_BOTTLE);
+            ModPotionUtil.add3PotionRecipes(Potions.AWKWARD, AllPotions.NAUSEA.get(), AllPotions.LONG_NAUSEA.get(),
+                    AllPotions.STRONG_NAUSEA.get(), Items.POISONOUS_POTATO);
             ModPotionUtil.addPotionAndLong(Potions.AWKWARD, AllPotions.GLOWING.get(), AllPotions.LONG_GLOWING.get(),
                     Items.GLOW_INK_SAC);
         });

@@ -46,5 +46,7 @@ public class CodysModJEIPlugin implements IModPlugin {
 
         reg.addItemStackInfo(new ItemStack(AllItems.IRON_TACK_HAMMER.get()), Component.translatable("info.codysmod.tack_hammer"));
         reg.addItemStackInfo(new ItemStack(AllItems.DIAMOND_TACK_HAMMER.get()), Component.translatable("info.codysmod.tack_hammer"));
+        reg.addItemStackInfo(new ItemStack(AllItems.CACTUS_KNIFE.get()), Component.translatable("info.codysmod.cactus_knife"));;
+        reg.addItemStackInfo(new ItemStack(AllItems.COCO_CHOPPER.get()), Component.translatable("info.codysmod.coco_chopper"));
     }
 }

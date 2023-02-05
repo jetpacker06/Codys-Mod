@@ -1,12 +1,12 @@
 package com.jetpacker06.codysmod.register;
 
 import com.jetpacker06.codysmod.CodysMod;
-import com.jetpacker06.codysmod.item.Tab;
-import com.jetpacker06.codysmod.item.TackHammerItem;
-import com.jetpacker06.codysmod.item.WarmMilkBucketItem;
+import com.jetpacker06.codysmod.item.*;
+import com.jetpacker06.codysmod.tag.AllTags;
 import net.minecraft.world.item.FishingRodItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -25,6 +25,12 @@ public class AllItems {
             new TackHammerItem(new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).defaultDurability(256)));
     public static final RegistryObject<Item> DIAMOND_TACK_HAMMER = ITEMS.register("diamond_tack_hammer", () ->
             new TackHammerItem(new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).defaultDurability(1024)));
+    public static final RegistryObject<Item> CACTUS_KNIFE = ITEMS.register("cactus_knife", () ->
+            new CactusKnifeItem(0, 0, Tiers.IRON, AllTags.MINEABLE_WITH_CACTUS_KNIFE,
+                    new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).defaultDurability(512)));
+    public static final RegistryObject<Item> COCO_CHOPPER = ITEMS.register("coco_chopper", () ->
+            new CocoChopperItem(0, 0, Tiers.IRON, AllTags.MINEABLE_WITH_COCO_CHOPPER,
+                    new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).defaultDurability(512)));
 
 
     public static final RegistryObject<Item> NETHERITE_FISHING_ROD = ITEMS.register("netherite_fishing_rod", () ->

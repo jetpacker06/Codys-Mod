@@ -35,6 +35,10 @@
   "item.codysmod.iron_tack_hammer": "Iron Tack Hammer",
   "item.codysmod.diamond_tack_hammer": "Diamond Tack Hammer",
   "info.codysmod.tack_hammer": "Used to break up stone blocks in the crafting menu.",
+  "item.codysmod.cactus_knife": "Cactus Knife",
+  "item.codysmod.coco_chopper": "Coco Chopper",
+  "info.codysmod.cactus_knife": "Mine cactus quickly.",
+  "info.codysmod.coco_chopper": "Mine cocoa quickly. Won't break jungle logs.",
 
   "item.codysmod.netherite_fishing_rod": "Netherite Fishing Rod",
 

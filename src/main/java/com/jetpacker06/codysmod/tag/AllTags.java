@@ -13,4 +13,6 @@ public class AllTags {
 
     public static final TagKey<Block> MINEABLE_WITH_CACTUS_KNIFE = create("mineable/cactus_knife");
     public static final TagKey<Block> MINEABLE_WITH_COCO_CHOPPER = create("mineable/coco_chopper");
+
+    public static final TagKey<Block> TILLABLE = create("tillable");
 }

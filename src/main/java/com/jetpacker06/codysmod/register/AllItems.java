@@ -2,6 +2,8 @@ package com.jetpacker06.codysmod.register;
 
 import com.jetpacker06.codysmod.CodysMod;
 import com.jetpacker06.codysmod.item.*;
+import com.jetpacker06.codysmod.item.farming.CactusKnifeItem;
+import com.jetpacker06.codysmod.item.farming.CocoChopperItem;
 import com.jetpacker06.codysmod.tag.AllTags;
 import net.minecraft.world.item.FishingRodItem;
 import net.minecraft.world.item.Item;
@@ -31,7 +33,10 @@ public class AllItems {
     public static final RegistryObject<Item> COCO_CHOPPER = ITEMS.register("coco_chopper", () ->
             new CocoChopperItem(0, 0, Tiers.IRON, AllTags.MINEABLE_WITH_COCO_CHOPPER,
                     new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).defaultDurability(512)));
-
+    public static final RegistryObject<Item> TILLINATOR_3000 = ITEMS.register("tillinator_3000", () ->
+            new Tillinator(new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).defaultDurability(1016), 3));
+    public static final RegistryObject<Item> TILLINATOR_5000 = ITEMS.register("tillinator_5000", () ->
+            new Tillinator(new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).defaultDurability(2032), 5));
 
     public static final RegistryObject<Item> NETHERITE_FISHING_ROD = ITEMS.register("netherite_fishing_rod", () ->
             new FishingRodItem(new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).defaultDurability(2032)));

@@ -3,7 +3,8 @@ package com.jetpacker06.codysmod.register;
 import com.jetpacker06.codysmod.CodysMod;
 import com.jetpacker06.codysmod.item.*;
 import com.jetpacker06.codysmod.item.farming.CactusKnifeItem;
-import com.jetpacker06.codysmod.item.farming.CocoChopperItem;
+import com.jetpacker06.codysmod.item.farming.CocoaChopperItem;
+import com.jetpacker06.codysmod.item.farming.FarmersHatchetItem;
 import com.jetpacker06.codysmod.tag.AllTags;
 import net.minecraft.world.item.FishingRodItem;
 import net.minecraft.world.item.Item;
@@ -30,8 +31,11 @@ public class AllItems {
     public static final RegistryObject<Item> CACTUS_KNIFE = ITEMS.register("cactus_knife", () ->
             new CactusKnifeItem(0, 0, Tiers.IRON, AllTags.MINEABLE_WITH_CACTUS_KNIFE,
                     new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).defaultDurability(512)));
-    public static final RegistryObject<Item> COCO_CHOPPER = ITEMS.register("coco_chopper", () ->
-            new CocoChopperItem(0, 0, Tiers.IRON, AllTags.MINEABLE_WITH_COCO_CHOPPER,
+    public static final RegistryObject<Item> COCOA_CHOPPER = ITEMS.register("cocoa_chopper", () ->
+            new CocoaChopperItem(0, 0, Tiers.IRON, AllTags.MINEABLE_WITH_COCOA_CHOPPER,
+                    new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).defaultDurability(512)));
+    public static final RegistryObject<Item> FARMERS_HATCHET = ITEMS.register("farmers_hatchet", () ->
+            new FarmersHatchetItem(0, 0, Tiers.IRON, AllTags.MINEABLE_WITH_FARMERS_HATCHET,
                     new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).defaultDurability(512)));
     public static final RegistryObject<Item> TILLINATOR_3000 = ITEMS.register("tillinator_3000", () ->
             new Tillinator(new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).defaultDurability(1016), 3));

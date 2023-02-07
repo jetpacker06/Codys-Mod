@@ -2,7 +2,6 @@
   "itemGroup.CodysMod": "Cody's Mod",
 
   "tooltip.codysmod.press_shift": "Press SHIFT for info.",
-  "tooltip.codysmod.warm_milk": "Cures bad effects. Won't be warm forever.",
 
   "block.codysmod.black_nether_bricks": "Black Nether Bricks",
   "block.codysmod.black_nether_brick_slab": "Black Nether Brick Slab",
@@ -34,18 +33,20 @@
 
   "item.codysmod.iron_tack_hammer": "Iron Tack Hammer",
   "item.codysmod.diamond_tack_hammer": "Diamond Tack Hammer",
-  "info.codysmod.tack_hammer": "Used to break up stone blocks in the crafting menu.",
+  "tooltip.codysmod.tack_hammer": "Used to break up stone blocks in the crafting menu.",
   "item.codysmod.cactus_knife": "Cactus Knife",
-  "item.codysmod.coco_chopper": "Coco Chopper",
+  "tooltip.codysmod.cactus_knife": "Mine cactus quickly.",
+  "item.codysmod.cocoa_chopper": "Cocoa Chopper",
+  "tooltip.codysmod.cocoa_chopper": "Mine cocoa quickly. Won't break jungle logs.",
+  "item.codysmod.farmers_hatchet": "Farmer's Hatchet",
+  "tooltip.codysmod.farmers_hatchet": "Mines pumpkins and melons quickly! Won't break stems.",
+
   "item.codysmod.tillinator_3000": "Tillinator 3000",
   "item.codysmod.tillinator_5000": "Tillinator 5000",
-  "info.codysmod.cactus_knife": "Mine cactus quickly.",
-  "info.codysmod.coco_chopper": "Mine cocoa quickly. Won't break jungle logs.",
 
   "item.codysmod.netherite_fishing_rod": "Netherite Fishing Rod",
-
   "item.codysmod.warm_milk": "Warm Milk",
-
+  "tooltip.codysmod.warm_milk": "Cures bad effects. Won't be warm forever.",
   "item.codysmod.copper_nugget": "Copper Nugget",
   "item.codysmod.netherite_nugget": "Netherite Nugget",
 

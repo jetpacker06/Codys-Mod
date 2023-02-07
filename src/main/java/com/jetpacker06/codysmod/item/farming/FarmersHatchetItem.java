@@ -14,8 +14,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class CactusKnifeItem extends CustomDiggerItem {
-    public CactusKnifeItem(float pAttackDamageModifier, float pAttackSpeedModifier, Tier pTier, TagKey<Block> pBlocks, Properties pProperties) {
+public class FarmersHatchetItem extends CustomDiggerItem {
+    public FarmersHatchetItem(float pAttackDamageModifier, float pAttackSpeedModifier, Tier pTier, TagKey<Block> pBlocks, Properties pProperties) {
         super(pAttackDamageModifier, pAttackSpeedModifier, pTier, pBlocks, pProperties);
     }
 
@@ -26,6 +26,6 @@ public class CactusKnifeItem extends CustomDiggerItem {
 
     @Override
     public void appendHoverText(@NotNull ItemStack pStack, @Nullable Level pLevel, @NotNull List<Component> pTooltipComponents, @NotNull TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.codysmod.cactus_knife"));
+        pTooltipComponents.add(Component.translatable("tooltip.codysmod.farmers_hatchet"));
     }
 }

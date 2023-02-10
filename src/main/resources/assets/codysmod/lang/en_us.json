@@ -44,6 +44,10 @@
   "item.codysmod.tillinator_3000": "Tillinator 3000",
   "item.codysmod.tillinator_5000": "Tillinator 5000",
 
+  "item.codysmod.diamond_shears": "Diamond Shears",
+  "item.codysmod.netherite_shears": "Netherite Shears",
+  "enchantment.codysmod.wool_fortune": "Wool Fortune",
+
   "item.codysmod.netherite_fishing_rod": "Netherite Fishing Rod",
   "item.codysmod.warm_milk": "Warm Milk",
   "tooltip.codysmod.warm_milk": "Cures bad effects. Won't be warm forever.",

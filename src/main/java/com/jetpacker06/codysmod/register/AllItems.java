@@ -6,10 +6,7 @@ import com.jetpacker06.codysmod.item.farming.CactusKnifeItem;
 import com.jetpacker06.codysmod.item.farming.CocoaChopperItem;
 import com.jetpacker06.codysmod.item.farming.FarmersHatchetItem;
 import com.jetpacker06.codysmod.tag.AllTags;
-import net.minecraft.world.item.FishingRodItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -44,6 +41,11 @@ public class AllItems {
 
     public static final RegistryObject<Item> NETHERITE_FISHING_ROD = ITEMS.register("netherite_fishing_rod", () ->
             new FishingRodItem(new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).defaultDurability(2032)));
+
+    public static final RegistryObject<Item> DIAMOND_SHEARS = ITEMS.register("diamond_shears", () ->
+            new ShearsItem(new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).defaultDurability(1016)));
+    public static final RegistryObject<Item> NETHERITE_SHEARS = ITEMS.register("netherite_shears", () ->
+            new ShearsItem(new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).defaultDurability(2032)));
 
     public static final RegistryObject<Item> WARM_MILK = ITEMS.register("warm_milk", () ->
             new WarmMilkBucketItem(new Item.Properties().tab(Tab.CODYSMOD).stacksTo(1).craftRemainder(Items.BUCKET)));

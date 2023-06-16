@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:dried_kelp_block"
+    },
+    "result": "minecraft:dried_kelp",
+    "count": 9
+}

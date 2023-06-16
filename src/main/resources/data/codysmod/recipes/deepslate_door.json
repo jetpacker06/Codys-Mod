@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "minecraft:deepslate"
+      },
+      {
+        "item": "minecraft:deepslate"
+      }
+    ]
+  },
+  "result": {
+    "item": "codysmod:deepslate_door",
+    "count": 3
+  }
+}

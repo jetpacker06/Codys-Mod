@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "codysmod:block/black_nether_bricks",
+    "side": "codysmod:block/black_nether_bricks",
+    "top": "codysmod:block/black_nether_bricks"
+  }
+}

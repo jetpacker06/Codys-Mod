@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "minecraft:piston"
+    },
+    "addition": {
+        "tag": "forge:slimeballs"
+    },
+    "result": {
+      "item":"minecraft:sticky_piston"
+    }
+}

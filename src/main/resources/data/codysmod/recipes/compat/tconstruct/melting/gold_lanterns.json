@@ -1,0 +1,23 @@
+{
+  "conditions": [
+    {
+      "modid": "tconstruct",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "ingredient": [
+    {
+      "item": "codysmod:gold_lantern"
+    },
+    {
+      "item": "codysmod:gold_soul_lantern"
+    }
+  ],
+  "result": {
+    "amount": 80,
+    "fluid": "tconstruct:molten_gold"
+  },
+  "temperature": 500,
+  "time": 80,
+  "type": "tconstruct:melting"
+}

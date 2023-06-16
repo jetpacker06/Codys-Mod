@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#C#",
+    "###"
+  ],
+  "key": {
+    "C": {
+      "tag": "minecraft:coals"
+    },
+    "#": {
+      "item": "minecraft:nether_bricks"
+    }
+  },
+  "result": {
+    "item": "codysmod:black_nether_bricks",
+    "count": 8
+  }
+}

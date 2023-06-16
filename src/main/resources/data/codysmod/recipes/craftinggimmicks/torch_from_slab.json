@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "_"
+    ],
+    "key": {
+        "#": {
+            "tag": "minecraft:coals"
+        },
+        "_": {
+            "tag": "minecraft:wooden_slabs"
+        }
+    },
+    "result": {
+        "item": "minecraft:torch",
+        "count": 4
+    }
+}

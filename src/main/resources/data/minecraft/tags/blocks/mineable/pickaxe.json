@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "codysmod:black_nether_bricks",
+    "codysmod:chiseled_black_nether_bricks",
+    "codysmod:cracked_black_nether_bricks",
+    "codysmod:black_nether_brick_slab",
+    "codysmod:black_nether_brick_stairs",
+    "codysmod:black_nether_brick_fence",
+
+    "codysmod:cracked_end_stone_bricks",
+    "codysmod:cracked_mud_bricks",
+
+    "codysmod:copper_lantern",
+    "codysmod:copper_soul_lantern",
+    "codysmod:gold_lantern",
+    "codysmod:gold_soul_lantern",
+
+    "codysmod:copper_door",
+    "codysmod:gold_door",
+    "codysmod:deepslate_door"
+  ]
+}

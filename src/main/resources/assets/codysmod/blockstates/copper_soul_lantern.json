@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "codysmod:block/copper_soul_lantern"
+    },
+    "hanging=true": {
+      "model": "codysmod:block/copper_soul_lantern_hanging"
+    }
+  }
+}

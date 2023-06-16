@@ -1,0 +1,23 @@
+{
+  "conditions": [
+    {
+      "modid": "tconstruct",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "ingredient": [
+    {
+      "item": "codysmod:copper_lantern"
+    },
+    {
+      "item": "codysmod:copper_soul_lantern"
+    }
+  ],
+  "result": {
+    "amount": 80,
+    "fluid": "tconstruct:molten_copper"
+  },
+  "temperature": 500,
+  "time": 80,
+  "type": "tconstruct:melting"
+}

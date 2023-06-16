@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "codysmod:block/copper_lantern"
+    },
+    "hanging=true": {
+      "model": "codysmod:block/copper_lantern_hanging"
+    }
+  }
+}

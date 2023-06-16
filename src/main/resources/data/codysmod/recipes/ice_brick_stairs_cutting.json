@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "codysmod:ice_bricks"
+  },
+  "result": "codysmod:ice_brick_stairs",
+  "count": 1
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "codysmod:tack_hammers"
+    },
+    {
+      "item": "codysmod:ice_bricks"
+    }
+  ],
+  "result": {
+    "item": "codysmod:cracked_ice_bricks",
+    "count": 1
+  },
+  "group":"hammering"
+}

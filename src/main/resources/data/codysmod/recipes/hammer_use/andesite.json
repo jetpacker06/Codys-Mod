@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "codysmod:tack_hammers"
+        },
+        {
+            "item": "minecraft:polished_andesite"
+        }
+    ],
+    "result": {
+        "item": "minecraft:andesite",
+        "count": 1
+    },
+    "group":"hammering"
+}

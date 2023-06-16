@@ -1,5 +1,5 @@
 package com.jetpacker06.codysmod.jei;
-/*
+
 import com.jetpacker06.codysmod.CodysMod;
 import com.jetpacker06.codysmod.potion.AllPotions;
 import com.jetpacker06.codysmod.register.AllItems;
@@ -44,6 +44,10 @@ public class CodysModJEIPlugin implements IModPlugin {
         addPotionInformation(reg, AllPotions.STRONG_NAUSEA.get(), "codysmod.nausea_potion_recipe_information");
         addPotionInformation(reg, AllPotions.LONG_NAUSEA.get(), "codysmod.nausea_potion_recipe_information");
 
+        addPotionInformation(reg, AllPotions.WITHER.get(), "codysmod.wither_potion_recipe_information");
+        addPotionInformation(reg, AllPotions.STRONG_WITHER.get(), "codysmod.wither_potion_recipe_information");
+        addPotionInformation(reg, AllPotions.LONG_WITHER.get(), "codysmod.wither_potion_recipe_information");
+
         reg.addItemStackInfo(new ItemStack(AllItems.IRON_TACK_HAMMER.get()), Component.translatable("tooltip.codysmod.tack_hammer"));
         reg.addItemStackInfo(new ItemStack(AllItems.DIAMOND_TACK_HAMMER.get()), Component.translatable("tooltip.codysmod.tack_hammer"));
         reg.addItemStackInfo(new ItemStack(AllItems.CACTUS_KNIFE.get()), Component.translatable("tooltip.codysmod.cactus_knife"));
@@ -51,5 +55,3 @@ public class CodysModJEIPlugin implements IModPlugin {
         reg.addItemStackInfo(new ItemStack(AllItems.FARMERS_HATCHET.get()), Component.translatable("tooltip.codysmod.farmers_hatchet"));
     }
 }
-
- */

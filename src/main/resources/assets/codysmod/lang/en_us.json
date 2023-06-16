@@ -53,6 +53,7 @@
   "tooltip.codysmod.warm_milk": "Cures bad effects. Won't be warm forever.",
   "item.codysmod.copper_nugget": "Copper Nugget",
   "item.codysmod.netherite_nugget": "Netherite Nugget",
+  "item.codysmod.wither_essence": "Wither Essence",
   "item.codysmod.can": "Can",
   "item.codysmod.pork_and_beans": "Pork and Beans",
 
@@ -106,5 +107,19 @@
   "item.minecraft.lingering_potion.effect.long_glowing": "Lingering Potion of Glowing",
   "item.minecraft.tipped_arrow.effect.glowing": "Arrow of Glowing",
   "item.minecraft.tipped_arrow.effect.long_glowing": "Arrow of Glowing",
-  "codysmod.glowing_potion_recipe_information": "Brewed with Glow Inc Sacs."
+  "codysmod.glowing_potion_recipe_information": "Brewed with Glow Inc Sacs.",
+
+  "item.minecraft.potion.effect.wither": "Potion of Wither",
+  "item.minecraft.splash_potion.effect.wither": "Splash Potion of Wither",
+  "item.minecraft.lingering_potion.effect.wither": "Lingering Potion of Wither",
+  "item.minecraft.potion.effect.long_wither": "Potion of Wither",
+  "item.minecraft.splash_potion.effect.long_wither": "Splash Potion of Wither",
+  "item.minecraft.lingering_potion.effect.long_wither": "Lingering Potion of Wither",
+  "item.minecraft.potion.effect.strong_wither": "Potion of Wither",
+  "item.minecraft.splash_potion.effect.strong_wither": "Splash Potion of Wither",
+  "item.minecraft.lingering_potion.effect.strong_wither": "Lingering Potion of Wither",
+  "item.minecraft.tipped_arrow.effect.wither": "Arrow of Wither",
+  "item.minecraft.tipped_arrow.effect.long_wither": "Arrow of Wither",
+  "item.minecraft.tipped_arrow.effect.strong_wither": "Arrow of Wither",
+  "codysmod.wither_potion_recipe_information": "Brewed with Wither Essence."
 }

@@ -114,8 +114,8 @@ dependencies {
     implementation fg.deobf("curse.maven:nbtviewer-514135:3865779")
     //Appleskin mod from cursemaven
     implementation fg.deobf("curse.maven:appleskin-248787:4440123")
-    //MouseTweaks mod from cursemaven
-    implementation fg.deobf("curse.maven:mousetweaks-60089:4440208")
+  //  //MouseTweaks mod from cursemaven
+  //  implementation fg.deobf("curse.maven:mousetweaks-60089:4440208")
 }
 jar {
     manifest {

@@ -7,9 +7,18 @@
     "codysmod:black_nether_brick_slab",
     "codysmod:black_nether_brick_stairs",
     "codysmod:black_nether_brick_fence",
+    "codysmod:black_nether_brick_fence_gate",
+    "codysmod:nether_brick_fence_gate",
 
     "codysmod:cracked_end_stone_bricks",
     "codysmod:cracked_mud_bricks",
+    "codysmod:cracked_purpur",
+
+    "codysmod:ice_bricks",
+    "codysmod:cracked_ice_bricks",
+    "codysmod:ice_brick_stairs",
+    "codysmod:ice_brick_wall",
+    "codysmod:ice_brick_slab",
 
     "codysmod:copper_lantern",
     "codysmod:copper_soul_lantern",
@@ -18,6 +27,11 @@
 
     "codysmod:copper_door",
     "codysmod:gold_door",
-    "codysmod:deepslate_door"
+    "codysmod:deepslate_door",
+
+    "codysmod:obsidian_stairs",
+    "codysmod:obsidian_slab",
+
+    "codysmod:inverted_powered_rail"
   ]
 }

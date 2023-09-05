@@ -13,11 +13,13 @@ public class CommonSetupTasks {
         registerCompostables(event);
         registerBrewingRecipes(event);
     }
+
     private static void registerCompostables(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             ComposterBlock.COMPOSTABLES.put(Items.POISONOUS_POTATO, 0.65f);
         });
     }
+
     private static void registerBrewingRecipes(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             ModPotionUtil.add3PotionRecipes(Potions.AWKWARD, AllPotions.HASTE.get(), AllPotions.LONG_HASTE.get(),

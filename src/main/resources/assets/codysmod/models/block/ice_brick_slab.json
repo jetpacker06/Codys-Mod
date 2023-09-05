@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "codysmod:block/ice_bricks",
+    "side": "codysmod:block/ice_bricks",
+    "top": "codysmod:block/ice_bricks"
+  }
+}

@@ -2,8 +2,8 @@ package com.jetpacker06.codysmod.register;
 
 import com.jetpacker06.codysmod.CodysMod;
 import com.jetpacker06.codysmod.block.CustomDoorBlock;
+import com.jetpacker06.codysmod.block.InvertedPoweredRailBlock;
 import com.jetpacker06.codysmod.block.ModBlockSetTypes;
-import com.jetpacker06.codysmod.item.Tab;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -17,23 +17,33 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
+@SuppressWarnings("unused")
 public class AllBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CodysMod.MOD_ID);
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn);
-        CodysMod.LOGGER.info("registered " + name);
-        return toReturn;
-    }
+
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
-    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
-        AllItems.ITEMS.register(
-                name, () -> new BlockItem(block.get(), new Item.Properties()));
+
+    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
+        return registerBlock(name, block, true);
     }
-    private static RegistryObject<Block> registerDoorBlock(String doorType, BlockSetType blockSetType, boolean requiresRedstone,
-                                                           CustomDoorBlock.DoorMaterial doorMaterial, BlockBehaviour.Properties properties) {
+
+    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, boolean addToTab) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerBlockItem(name, toReturn, addToTab);
+        CodysMod.LOGGER.info("registered " + name);
+        return toReturn;
+    }
+
+    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block, boolean addToTab) {
+        RegistryObject<Item> item = AllItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        if (addToTab) {
+            Tab.add(item);
+        }
+    }
+    @SuppressWarnings("SameParameterValue")
+    private static RegistryObject<Block> registerDoorBlock(String doorType, BlockSetType blockSetType, boolean requiresRedstone, CustomDoorBlock.DoorMaterial doorMaterial, BlockBehaviour.Properties properties) {
         return registerBlock(doorType + "_door", () -> new CustomDoorBlock(properties, blockSetType, requiresRedstone, doorMaterial));
     }
 
@@ -55,24 +65,6 @@ public class AllBlocks {
             new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_FENCE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
 
-    public static final RegistryObject<Block> GOLD_LANTERN = registerBlock("gold_lantern", () ->
-            new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)));
-    public static final RegistryObject<Block> GOLD_SOUL_LANTERN = registerBlock("gold_soul_lantern", () ->
-            new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)));
-    public static final RegistryObject<Block> COPPER_LANTERN = registerBlock("copper_lantern", () ->
-            new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)));
-    public static final RegistryObject<Block> COPPER_SOUL_LANTERN = registerBlock("copper_soul_lantern", () ->
-            new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)));
-
-
-    public static final RegistryObject<Block> GOLD_DOOR = registerDoorBlock("gold", BlockSetType.f_271208_, false,
-            CustomDoorBlock.DoorMaterial.METAL, BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).requiresCorrectToolForDrops());
-    public static final RegistryObject<Block> COPPER_DOOR = registerDoorBlock("copper", ModBlockSetTypes.COPPER, false,
-            CustomDoorBlock.DoorMaterial.METAL, BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).requiresCorrectToolForDrops());
-    public static final RegistryObject<Block> DEEPSLATE_DOOR = registerDoorBlock("deepslate", BlockSetType.f_271479_, false,
-            CustomDoorBlock.DoorMaterial.STONE, BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).requiresCorrectToolForDrops());
-
-
     public static final RegistryObject<Block> CRACKED_END_STONE_BRICKS = registerBlock("cracked_end_stone_bricks", () ->
             new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE_BRICKS)));
     public static final RegistryObject<Block> CRACKED_MUD_BRICKS = registerBlock("cracked_mud_bricks", () ->
@@ -88,4 +80,32 @@ public class AllBlocks {
             new StairBlock(() -> ICE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.PACKED_ICE)));
     public static final RegistryObject<Block> ICE_BRICK_WALL = registerBlock("ice_brick_wall", () ->
             new WallBlock(BlockBehaviour.Properties.copy(Blocks.PACKED_ICE)));
+    public static final RegistryObject<Block> ICE_BRICK_SLAB = registerBlock("ice_brick_slab", () ->
+            new SlabBlock(BlockBehaviour.Properties.copy(Blocks.PACKED_ICE)));
+
+
+    public static final RegistryObject<Block> GOLD_LANTERN = registerBlock("gold_lantern", () ->
+            new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)));
+    public static final RegistryObject<Block> GOLD_SOUL_LANTERN = registerBlock("gold_soul_lantern", () ->
+            new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)));
+    public static final RegistryObject<Block> COPPER_LANTERN = registerBlock("copper_lantern", () ->
+            new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)));
+    public static final RegistryObject<Block> COPPER_SOUL_LANTERN = registerBlock("copper_soul_lantern", () ->
+            new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)));
+
+
+    public static final RegistryObject<Block> GOLD_DOOR = registerDoorBlock("gold", BlockSetType.GOLD, false,
+            CustomDoorBlock.DoorMaterial.METAL, BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).requiresCorrectToolForDrops());
+    public static final RegistryObject<Block> COPPER_DOOR = registerDoorBlock("copper", ModBlockSetTypes.COPPER, false,
+            CustomDoorBlock.DoorMaterial.METAL, BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).requiresCorrectToolForDrops());
+    public static final RegistryObject<Block> DEEPSLATE_DOOR = registerDoorBlock("deepslate", BlockSetType.STONE, false,
+            CustomDoorBlock.DoorMaterial.STONE, BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).requiresCorrectToolForDrops());
+
+    public static final RegistryObject<Block> OBSIDIAN_STAIRS = registerBlock("obsidian_stairs", () ->
+            new StairBlock(Blocks.OBSIDIAN::defaultBlockState, BlockBehaviour.Properties.copy(Blocks.OBSIDIAN)));
+    public static final RegistryObject<Block> OBSIDIAN_SLAB = registerBlock("obsidian_slab", () ->
+            new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN)));
+
+    public static final RegistryObject<Block> INVERTED_POWERED_RAIL = registerBlock("inverted_powered_rail", () ->
+            new InvertedPoweredRailBlock(BlockBehaviour.Properties.copy(Blocks.POWERED_RAIL).noOcclusion()), false);
 }

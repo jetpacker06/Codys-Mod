@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "codysmod:block/obsidian_slab"
+    },
+    "type=double": {
+      "model": "block/obsidian"
+    },
+    "type=top": {
+      "model": "codysmod:block/obsidian_slab_top"
+    }
+  }
+}

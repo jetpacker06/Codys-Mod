@@ -11,7 +11,10 @@
         "item": "minecraft:deepslate"
       },
       {
-        "item": "minecraft:deepslate"
+        "item": "minecraft:cobbled_deepslate"
+      },
+      {
+        "item": "minecraft:deepslate_bricks"
       }
     ]
   },

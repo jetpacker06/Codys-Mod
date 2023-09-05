@@ -1,13 +1,13 @@
 {
   "type": "minecraft:smithing_transform",
   "base": {
-    "item": "minecraft:fishing_rod"
+    "item": "minecraft:shears"
   },
   "addition": {
     "item": "minecraft:netherite_ingot"
   },
   "result": {
-    "item": "codysmod:netherite_fishing_rod"
+    "item": "codysmod:netherite_shears"
   },
   "template": {
     "item": "minecraft:netherite_upgrade_smithing_template"

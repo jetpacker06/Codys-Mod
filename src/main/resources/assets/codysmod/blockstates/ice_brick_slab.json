@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "codysmod:block/ice_brick_slab"
+    },
+    "type=double": {
+      "model": "codysmod:block/ice_bricks"
+    },
+    "type=top": {
+      "model": "codysmod:block/ice_brick_slab_top"
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "itemGroup.CodysMod": "Cody's Mod",
+  "tab.codysmod.codysmod": "Cody's Mod",
 
   "tooltip.codysmod.press_shift": "Press SHIFT for info.",
 
@@ -15,6 +15,10 @@
   "block.codysmod.cracked_ice_bricks": "Cracked Ice Bricks",
   "block.codysmod.ice_bricks": "Ice Bricks",
   "block.codysmod.ice_brick_wall": "Ice Brick Wall",
+  "block.codysmod.ice_brick_slab": "Ice Brick Slab",
+
+  "block.codysmod.obsidian_stairs": "Obsidian Stairs",
+  "block.codysmod.obsidian_slab": "Obsidian Slab",
 
   "block.codysmod.nether_brick_fence_gate": "Nether Brick Fence Gate",
 
@@ -30,6 +34,8 @@
   "block.codysmod.gold_door": "Gold Door",
   "block.codysmod.copper_door": "Copper Door",
   "block.codysmod.deepslate_door": "Deepslate Door",
+
+  "block.codysmod.inverted_powered_rail": "Inverted Powered Rail",
 
   "item.codysmod.iron_tack_hammer": "Iron Tack Hammer",
   "item.codysmod.diamond_tack_hammer": "Diamond Tack Hammer",
@@ -55,7 +61,7 @@
   "item.codysmod.netherite_nugget": "Netherite Nugget",
   "item.codysmod.wither_essence": "Wither Essence",
   "item.codysmod.can": "Can",
-  "item.codysmod.pork_and_beans": "Pork and Beans",
+  "item.codysmod.vegetable_stew": "Vegetable Stew",
 
   "item.minecraft.potion.effect.haste": "Potion of Haste",
   "item.minecraft.splash_potion.effect.haste": "Splash Potion of Haste",

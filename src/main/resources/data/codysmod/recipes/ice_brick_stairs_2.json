@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " ##",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "codysmod:ice_bricks"
+    }
+  },
+  "result": {
+    "item": "codysmod:ice_brick_stairs",
+    "count": 4
+  }
+}

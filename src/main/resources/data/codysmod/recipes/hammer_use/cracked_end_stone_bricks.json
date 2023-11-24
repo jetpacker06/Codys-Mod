@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "codysmod:tack_hammers"
+        },
+        {
+            "item": "minecraft:end_stone_bricks"
+        }
+    ],
+    "result": {
+        "item": "codysmod:cracked_end_stone_bricks",
+        "count": 1
+    },
+    "group":"hammering"
+}

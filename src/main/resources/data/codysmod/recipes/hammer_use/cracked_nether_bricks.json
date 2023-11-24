@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "codysmod:tack_hammers"
+        },
+        {
+            "item": "minecraft:nether_bricks"
+        }
+    ],
+    "result": {
+        "item": "minecraft:cracked_nether_bricks",
+        "count": 1
+    },
+    "group":"hammering"
+}

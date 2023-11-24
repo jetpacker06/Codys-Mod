@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "codysmod:ice_bricks"
+    "item": "minecraft:deepslate"
   },
-  "result": "codysmod:ice_brick_slab",
+  "result": "codysmod:deepslate_door",
   "count": 2
 }

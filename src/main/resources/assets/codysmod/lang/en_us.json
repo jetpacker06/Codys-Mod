@@ -1,5 +1,5 @@
 {
-  "tab.codysmod.codysmod": "Cody's Mod",
+  "itemGroup.CODYSMOD": "Cody's Mod",
 
   "tooltip.codysmod.press_shift": "Press SHIFT for info.",
 
@@ -20,6 +20,9 @@
   "block.codysmod.obsidian_stairs": "Obsidian Stairs",
   "block.codysmod.obsidian_slab": "Obsidian Slab",
 
+  "block.codysmod.cocoa_basket": "Cocoa Basket",
+  "block.codysmod.cactus_bale": "Cactus Bale",
+
   "block.codysmod.nether_brick_fence_gate": "Nether Brick Fence Gate",
 
   "block.codysmod.cracked_end_stone_bricks": "Cracked End Stone Bricks",
@@ -36,6 +39,9 @@
   "block.codysmod.deepslate_door": "Deepslate Door",
 
   "block.codysmod.inverted_powered_rail": "Inverted Powered Rail",
+
+  "block.codysmod.rose": "Rose",
+  "block.codysmod.potted_rose": "Potted Rose",
 
   "item.codysmod.iron_tack_hammer": "Iron Tack Hammer",
   "item.codysmod.diamond_tack_hammer": "Diamond Tack Hammer",

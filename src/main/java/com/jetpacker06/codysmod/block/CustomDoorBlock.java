@@ -7,7 +7,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
 import org.jetbrains.annotations.NotNull;
@@ -21,8 +20,8 @@ public class CustomDoorBlock extends DoorBlock {
     private final boolean requiresRedstone;
     private final DoorMaterial doorMaterial;
 
-    public CustomDoorBlock(Properties pProperties, BlockSetType blockSetType, boolean requiresRedstone, DoorMaterial doorMaterial) {
-        super(pProperties, blockSetType);
+    public CustomDoorBlock(Properties pProperties, boolean requiresRedstone, DoorMaterial doorMaterial) {
+        super(pProperties);
         this.requiresRedstone = requiresRedstone;
         this.doorMaterial = doorMaterial;
     }

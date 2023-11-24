@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "codysmod:tack_hammers"
+        },
+        {
+            "item": "minecraft:deepslate_tiles"
+        }
+    ],
+    "result": {
+        "item": "minecraft:cracked_deepslate_tiles",
+        "count": 1
+    },
+    "group":"hammering"
+}

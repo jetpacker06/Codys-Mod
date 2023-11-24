@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "codysmod:tack_hammers"
+        },
+        {
+            "item": "minecraft:polished_blackstone_bricks"
+        }
+    ],
+    "result": {
+        "item": "minecraft:cracked_polished_blackstone_bricks",
+        "count": 1
+    },
+    "group":"hammering"
+}

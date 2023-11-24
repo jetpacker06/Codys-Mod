@@ -2,16 +2,24 @@ package com.jetpacker06.codysmod.events;
 
 import com.jetpacker06.codysmod.potion.AllPotions;
 import com.jetpacker06.codysmod.potion.ModPotionUtil;
+import com.jetpacker06.codysmod.register.AllBlocks;
 import com.jetpacker06.codysmod.register.AllItems;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 
 public class CommonSetupTasks {
     public static void onCommonSetup(final FMLCommonSetupEvent event) {
+        registerPotFlowers(event);
         registerCompostables(event);
         registerBrewingRecipes(event);
+    }
+
+    private static void registerPotFlowers(FMLCommonSetupEvent event) {
+        ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(AllBlocks.ROSE.getId(), AllBlocks.POTTED_ROSE);
     }
 
     private static void registerCompostables(final FMLCommonSetupEvent event) {

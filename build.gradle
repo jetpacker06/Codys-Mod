@@ -110,12 +110,12 @@ dependencies {
     // at runtime, use the full JEI jar for Forge
     runtimeOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}"))
 
-    //NBT Viewer mod from cursemaven
-    implementation fg.deobf("curse.maven:nbtviewer-514135:4578522")
+  //  //NBT Viewer mod from cursemaven
+  //  implementation fg.deobf("curse.maven:nbtviewer-514135:4578522")
     //Appleskin mod from cursemaven
-    implementation fg.deobf("curse.maven:appleskin-248787:4605078")
-    //MouseTweaks mod from cursemaven
-    implementation fg.deobf("curse.maven:mousetweaks-60089:4581243")
+    implementation fg.deobf("curse.maven:appleskin-248787:3872808")
+  //  //MouseTweaks mod from cursemaven
+  //  implementation fg.deobf("curse.maven:mousetweaks-60089:4581243")
 }
 jar {
     manifest {

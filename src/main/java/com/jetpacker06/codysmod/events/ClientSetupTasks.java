@@ -10,8 +10,10 @@ public class ClientSetupTasks {
         registerRenderTypes(event);
     }
 
-    @SuppressWarnings("deprecation")
+    @SuppressWarnings("removal")
     public static void registerRenderTypes(final FMLCommonSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(AllBlocks.INVERTED_POWERED_RAIL.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(AllBlocks.ROSE.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(AllBlocks.POTTED_ROSE.get(), RenderType.cutout());
     }
 }

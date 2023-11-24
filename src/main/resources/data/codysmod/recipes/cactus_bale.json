@@ -1,16 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " #",
-    "# "
+    "###",
+    "###",
+    "###"
   ],
   "key": {
     "#": {
-      "item": "codysmod:black_nether_brick_slab"
+      "item": "minecraft:cactus"
     }
   },
   "result": {
-    "item": "codysmod:black_nether_bricks",
+    "item": "codysmod:cactus_bale",
     "count": 1
   }
 }

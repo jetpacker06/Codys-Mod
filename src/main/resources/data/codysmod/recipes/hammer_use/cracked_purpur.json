@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "codysmod:tack_hammers"
+        },
+        {
+            "item": "minecraft:purpur_block"
+        }
+    ],
+    "result": {
+        "item": "codysmod:cracked_purpur",
+        "count": 1
+    },
+    "group":"hammering"
+}

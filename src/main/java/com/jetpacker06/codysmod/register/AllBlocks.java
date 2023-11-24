@@ -3,13 +3,12 @@ package com.jetpacker06.codysmod.register;
 import com.jetpacker06.codysmod.CodysMod;
 import com.jetpacker06.codysmod.block.CustomDoorBlock;
 import com.jetpacker06.codysmod.block.InvertedPoweredRailBlock;
-import com.jetpacker06.codysmod.block.ModBlockSetTypes;
-import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -37,14 +36,11 @@ public class AllBlocks {
     }
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block, boolean addToTab) {
-        RegistryObject<Item> item = AllItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
-        if (addToTab) {
-            Tab.add(item);
-        }
+        RegistryObject<Item> item = AllItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(Tab.CODYSMOD)));
     }
     @SuppressWarnings("SameParameterValue")
-    private static RegistryObject<Block> registerDoorBlock(String doorType, BlockSetType blockSetType, boolean requiresRedstone, CustomDoorBlock.DoorMaterial doorMaterial, BlockBehaviour.Properties properties) {
-        return registerBlock(doorType + "_door", () -> new CustomDoorBlock(properties, blockSetType, requiresRedstone, doorMaterial));
+    private static RegistryObject<Block> registerDoorBlock(String doorType, boolean requiresRedstone, CustomDoorBlock.DoorMaterial doorMaterial, BlockBehaviour.Properties properties) {
+        return registerBlock(doorType + "_door", () -> new CustomDoorBlock(properties, requiresRedstone, doorMaterial));
     }
 
     public static final RegistryObject<Block> BLACK_NETHER_BRICKS = registerBlock("black_nether_bricks", () ->
@@ -60,9 +56,15 @@ public class AllBlocks {
     public static final RegistryObject<Block> BLACK_NETHER_BRICK_FENCE = registerBlock("black_nether_brick_fence", () ->
             new FenceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_FENCE)));
     public static final RegistryObject<Block> BLACK_NETHER_BRICK_FENCE_GATE = registerBlock("black_nether_brick_fence_gate", () ->
-            new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_FENCE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+            new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_FENCE)));
     public static final RegistryObject<Block> NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate", () ->
-            new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_FENCE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+            new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_FENCE)));
+
+
+    public static final RegistryObject<Block> CACTUS_BALE = registerBlock("cactus_bale", () ->
+            new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> COCOA_BASKET = registerBlock("cocoa_basket", () ->
+            new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
 
     public static final RegistryObject<Block> CRACKED_END_STONE_BRICKS = registerBlock("cracked_end_stone_bricks", () ->
@@ -71,6 +73,7 @@ public class AllBlocks {
             new Block(BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS)));
     public static final RegistryObject<Block> CRACKED_PURPUR = registerBlock("cracked_purpur", () ->
             new Block(BlockBehaviour.Properties.copy(Blocks.PURPUR_BLOCK)));
+
 
     public static final RegistryObject<Block> ICE_BRICKS = registerBlock("ice_bricks", () ->
             new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_ICE)));
@@ -94,11 +97,11 @@ public class AllBlocks {
             new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)));
 
 
-    public static final RegistryObject<Block> GOLD_DOOR = registerDoorBlock("gold", BlockSetType.GOLD, false,
+    public static final RegistryObject<Block> GOLD_DOOR = registerDoorBlock("gold", false,
             CustomDoorBlock.DoorMaterial.METAL, BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).requiresCorrectToolForDrops());
-    public static final RegistryObject<Block> COPPER_DOOR = registerDoorBlock("copper", ModBlockSetTypes.COPPER, false,
+    public static final RegistryObject<Block> COPPER_DOOR = registerDoorBlock("copper", false,
             CustomDoorBlock.DoorMaterial.METAL, BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).requiresCorrectToolForDrops());
-    public static final RegistryObject<Block> DEEPSLATE_DOOR = registerDoorBlock("deepslate", BlockSetType.STONE, false,
+    public static final RegistryObject<Block> DEEPSLATE_DOOR = registerDoorBlock("deepslate", false,
             CustomDoorBlock.DoorMaterial.STONE, BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).requiresCorrectToolForDrops());
 
     public static final RegistryObject<Block> OBSIDIAN_STAIRS = registerBlock("obsidian_stairs", () ->
@@ -108,4 +111,10 @@ public class AllBlocks {
 
     public static final RegistryObject<Block> INVERTED_POWERED_RAIL = registerBlock("inverted_powered_rail", () ->
             new InvertedPoweredRailBlock(BlockBehaviour.Properties.copy(Blocks.POWERED_RAIL).noOcclusion()), false);
+
+    public static final RegistryObject<Block> ROSE = registerBlock("rose", () -> new FlowerBlock(() ->
+            MobEffects.SATURATION, 7, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ)));
+    public static final RegistryObject<Block> POTTED_ROSE = BLOCKS.register("potted_rose", () ->
+            new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ROSE, BlockBehaviour.Properties.copy(Blocks.DANDELION).offsetType(BlockBehaviour.OffsetType.NONE))
+    );
 }

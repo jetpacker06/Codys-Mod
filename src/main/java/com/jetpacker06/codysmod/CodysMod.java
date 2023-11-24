@@ -2,7 +2,6 @@ package com.jetpacker06.codysmod;
 
 import com.jetpacker06.codysmod.events.ClientSetupTasks;
 import com.jetpacker06.codysmod.events.CommonSetupTasks;
-import com.jetpacker06.codysmod.register.Tab;
 import com.jetpacker06.codysmod.potion.AllPotions;
 import com.jetpacker06.codysmod.register.AllBlocks;
 import com.jetpacker06.codysmod.register.AllItems;
@@ -27,7 +26,7 @@ public class CodysMod {
         AllItems.register(eventBus);
         AllPotions.register(eventBus);
 
-        Tab.register(eventBus);
+        //Tab.register(eventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         LOGGER.info("Loaded " + MOD_ID);

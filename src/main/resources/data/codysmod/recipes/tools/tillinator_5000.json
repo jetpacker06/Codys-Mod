@@ -1,12 +1,12 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:fishing_rod"
+    "item": "codysmod:tillinator_3000"
   },
   "addition": {
     "item": "minecraft:netherite_ingot"
   },
   "result": {
-    "item": "codysmod:netherite_fishing_rod"
+    "item": "codysmod:tillinator_5000"
   }
 }

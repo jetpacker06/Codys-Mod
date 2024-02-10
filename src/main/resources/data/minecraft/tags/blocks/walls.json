@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "codysmod:ice_brick_wall"
+    "codysmod:ice_brick_wall",
+    "codysmod:quartz_wall"
   ]
 }

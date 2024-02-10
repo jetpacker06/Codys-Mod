@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ii",
+    " s",
+    " s"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "i": [
+      {
+        "item": "minecraft:pumpkin"
+      },
+      {
+        "item": "minecraft:melon"
+      }
+    ]
+  },
+  "result": {
+    "item": "codysmod:farmers_hatchet",
+    "count": 1
+  }
+}

@@ -5,13 +5,13 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "condition": "minecraft:survives_explosion"
+          "condition": "minecraft:match_tool"
         }
       ],
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "codysmod:inverted_powered_rail"
+          "name": "codysmod:quartz_wall"
         }
       ],
       "rolls": 1.0

@@ -5,7 +5,10 @@
       "item": "minecraft:bowl"
     },
     {
-      "item": "minecraft:bowl"
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "minecraft:potato"
     },
     {
       "item": "minecraft:beetroot"
@@ -14,17 +17,11 @@
       "item": "minecraft:carrot"
     },
     {
-      "item": "minecraft:potato"
-    },
-    {
-      "item": "minecraft:potato"
-    },
-    {
       "item": "minecraft:carrot"
     }
   ],
   "result": {
     "item": "codysmod:vegetable_stew",
-    "count": 2
+    "count": 1
   }
 }
